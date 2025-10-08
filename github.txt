@@ -9,13 +9,13 @@ cd "local_path\ACTEC_Employee_Management_System"
 
 Initialize Git:
 
-git init
+  git init
 
 🪜 STEP 2: Check Git status
 
 View which files are untracked:
 
-git status
+  git status
 
 
 You’ll see:
