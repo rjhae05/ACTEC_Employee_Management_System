@@ -1,0 +1,104 @@
+🧩 COMPLETE STEPS TO PUSH A VB.NET PROJECT TO GITHUB
+🪜 STEP 1: Initialize Git in your project folder
+
+Open PowerShell or Command Prompt in your project directory:
+
+cd "D:\Project for Portfolio\ACTEC_Employee_Management_System"
+
+
+Initialize Git:
+
+git init
+
+🪜 STEP 2: Check Git status
+
+View which files are untracked:
+
+git status
+
+
+You’ll see:
+
+Untracked files:
+  .vs/
+  ACTEC_Employee_Management_System.sln
+  ACTEC_Employee_Management_System/
+
+🪜 STEP 3: (Optional but Recommended) Create a .gitignore
+
+To avoid pushing unnecessary build files:
+
+Create a file named .gitignore in your project folder and add this content:
+
+# Ignore Visual Studio and VB.NET temporary files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+
+Then run:
+
+git add .gitignore
+
+🪜 STEP 4: Stage all your files
+git add .
+
+🪜 STEP 5: Commit your changes
+git commit -m "Initial commit - ACTEC Employee Management System"
+
+🪜 STEP 6: Rename your default branch to main
+git branch -M main
+
+🪜 STEP 7: Create a new GitHub repository
+
+Go to https://github.com/new
+
+Enter a repository name — e.g., ACTEC_Employee_Management_System
+
+Choose Public or Private
+
+Do NOT initialize with a README, license, or .gitignore (since you already have local files)
+
+Click Create repository
+
+🪜 STEP 8: Connect your local project to GitHub
+
+Copy the HTTPS link from your new GitHub repository (example below) and paste it into PowerShell:
+
+git remote add origin https://github.com/yourusername/ACTEC_Employee_Management_System.git
+
+🪜 STEP 9: Push your code to GitHub
+git push -u origin main
+
+
+You may be asked to log in to GitHub — use your GitHub credentials or a personal access token if prompted.
+
+🪜 STEP 10: Verify on GitHub
+
+Go to your repository URL, e.g.:
+
+https://github.com/yourusername/ACTEC_Employee_Management_System
+
+
+✅ You should now see your folders:
+
+Forms/
+Controls/
+Services/
+Models/
+Utils/
+Resources/
+Program.vb
+App.config
+
+🪜 STEP 11 (Optional): Update your project in the future
+
+Whenever you make changes:
+
+git add .
+git commit -m "Updated LoginForm and added DatabaseService"
+git push
