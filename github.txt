@@ -4,7 +4,7 @@
 
 Open PowerShell or Command Prompt in your project directory:
 
-cd "D:\Project for Portfolio\ACTEC_Employee_Management_System"
+cd "local_path\ACTEC_Employee_Management_System"
 
 
 Initialize Git:
