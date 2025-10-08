@@ -4,7 +4,7 @@ STEP-BY-STEP: PUSH OR UPDATE PROJECT TO GITHUB
   
   Open PowerShell or Command Prompt and go to your project folder:
   
-  cd "D:\Project for Portfolio\ACTEC_Employee_Management_System"
+  cd "local_path\ACTEC_Employee_Management_System"
   
   ⚙️ 2️⃣ Check if Git is initialized
   git status
