@@ -1,105 +1,52 @@
-🧩 COMPLETE STEPS TO PUSH A VB.NET PROJECT TO GITHUB
-
-🪜 STEP 1: Initialize Git in your project folder
-
-Open PowerShell or Command Prompt in your project directory:
-
-cd "local_path\ACTEC_Employee_Management_System"
-
-
-Initialize Git:
-
-  git init
-
-🪜 STEP 2: Check Git status
-
-View which files are untracked:
-
+STEP-BY-STEP: PUSH OR UPDATE PROJECT TO GITHUB
+  
+  🧩 1️⃣ Navigate to your project folder
+  
+  Open PowerShell or Command Prompt and go to your project folder:
+  
+  cd "D:\Project for Portfolio\ACTEC_Employee_Management_System"
+  
+  ⚙️ 2️⃣ Check if Git is initialized
   git status
-
-
-You’ll see:
-
-Untracked files:
-  .vs/
-  ACTEC_Employee_Management_System.sln
-  ACTEC_Employee_Management_System/
-
-🪜 STEP 3: (Optional but Recommended) Create a .gitignore
-
-To avoid pushing unnecessary build files:
-
-Create a file named .gitignore in your project folder and add this content:
-
-# Ignore Visual Studio and VB.NET temporary files
-.vs/
-bin/
-obj/
-*.user
-*.suo
-*.cache
-*.log
-
-
-Then run:
-
-git add .gitignore
-
-🪜 STEP 4: Stage all your files
-git add .
-
-🪜 STEP 5: Commit your changes
-git commit -m "Initial commit - ACTEC Employee Management System"
-
-🪜 STEP 6: Rename your default branch to main
-git branch -M main
-
-🪜 STEP 7: Create a new GitHub repository
-
-Go to https://github.com/new
-
-Enter a repository name — e.g., ACTEC_Employee_Management_System
-
-Choose Public or Private
-
-Do NOT initialize with a README, license, or .gitignore (since you already have local files)
-
-Click Create repository
-
-🪜 STEP 8: Connect your local project to GitHub
-
-Copy the HTTPS link from your new GitHub repository (example below) and paste it into PowerShell:
-
-git remote add origin https://github.com/yourusername/ACTEC_Employee_Management_System.git
-
-🪜 STEP 9: Push your code to GitHub
-git push -u origin main
-
-
-You may be asked to log in to GitHub — use your GitHub credentials or a personal access token if prompted.
-
-🪜 STEP 10: Verify on GitHub
-
-Go to your repository URL, e.g.:
-
-https://github.com/yourusername/ACTEC_Employee_Management_System
-
-
-✅ You should now see your folders:
-
-Forms/
-Controls/
-Services/
-Models/
-Utils/
-Resources/
-Program.vb
-App.config
-
-🪜 STEP 11 (Optional): Update your project in the future
-
-Whenever you make changes:
-
-git add .
-git commit -m "Updated LoginForm and added DatabaseService"
-git push
+  
+  
+  If it says “not a git repository”, then initialize:
+  
+  git init
+  
+  🔗 3️⃣ Add your remote (if not added yet)
+  
+  Only do this once:
+  
+  git remote add origin https://github.com/rjhae05/ACTEC_Employee_Management_System.git
+  
+  
+  If you already added it before, you can skip this step or confirm:
+  
+  git remote -v
+  
+  📦 4️⃣ Add all new or changed files
+  git add .
+  
+  🧾 5️⃣ Commit the changes
+  
+  For first push:
+  
+  git commit -m "Initial commit"
+  
+  
+  For updating (e.g., you edited files):
+  
+  git commit -m "Updated UI and backend structure"
+  
+  🚀 6️⃣ Push to GitHub
+  
+  If this is your first push (no branch yet):
+  
+  git branch -M main
+  git push -u origin main
+  
+  
+  If you already have pushed before (just an update):
+  
+  git push
