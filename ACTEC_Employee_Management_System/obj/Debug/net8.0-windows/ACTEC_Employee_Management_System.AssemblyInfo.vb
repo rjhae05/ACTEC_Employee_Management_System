@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("ACTEC_Employee_Management_System"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7e69112ae04e44934e8baf7c1d06e2d0b46c8d8"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("ACTEC_Employee_Management_System"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("ACTEC_Employee_Management_System"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
